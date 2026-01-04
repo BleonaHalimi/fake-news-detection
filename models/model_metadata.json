@@ -1,0 +1,13 @@
+{
+  "training_date": "2026-01-03T15:01:51.060260",
+  "accuracies": {
+    "Logistic Regression": 98.89,
+    "Decision Tree": 99.59,
+    "Gradient Boosting": 99.48,
+    "Random Forest": 99.68
+  },
+  "training_samples": 33658,
+  "testing_samples": 11220,
+  "tfidf_features": 5000,
+  "random_state": 42
+}
