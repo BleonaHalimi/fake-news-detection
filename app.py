@@ -115,7 +115,7 @@ if selected_page == NAV_PAGES['home']:
     st.markdown("---")
 
     # Features
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
 
     with col1:
         st.markdown("""
@@ -130,14 +130,6 @@ if selected_page == NAV_PAGES['home']:
         <div style='text-align: center; padding: 20px;'>
             <h3 style='color: #9b59b6;'>Batch Processing</h3>
             <p>Upload multiple articles at once for bulk analysis and export results</p>
-        </div>
-        """, unsafe_allow_html=True)
-
-    with col3:
-        st.markdown("""
-        <div style='text-align: center; padding: 20px;'>
-            <h3 style='color: #e74c3c;'>URL Analysis</h3>
-            <p>Extract and analyze articles directly from web URLs automatically</p>
         </div>
         """, unsafe_allow_html=True)
 
@@ -189,10 +181,6 @@ elif selected_page == NAV_PAGES['single']:
 elif selected_page == NAV_PAGES['batch']:
     from components import batch_analysis
     batch_analysis.render(models)
-
-elif selected_page == NAV_PAGES['url']:
-    from components import url_analysis
-    url_analysis.render(models)
 
 elif selected_page == NAV_PAGES['history']:
     from components import history_viewer

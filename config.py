@@ -74,7 +74,6 @@ NAV_PAGES = {
     'home': 'Home',
     'single': 'Single Article Analysis',
     'batch': 'Batch Analysis',
-    'url': 'URL Analysis',
     'history': 'Analysis History'
 }
 

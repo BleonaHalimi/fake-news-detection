@@ -70,14 +70,7 @@ streamlit run app.py
 3. View aggregated statistics
 4. Download results as CSV or PDF
 
-### 4. URL Analysis
-
-1. Click **"URL Analysis"**
-2. Enter news article URL
-3. System will scrape and analyze
-4. Same enhanced visualizations as single analysis
-
-### 5. Analysis History
+### 4. Analysis History
 
 - View past analyses
 - Filter by date, result (fake/true)
@@ -294,15 +287,13 @@ Fake News/
 ├── components/
 │   ├── single_analysis.py          # Enhanced with LIME & feature importance
 │   ├── batch_analysis.py           # Batch processing
-│   ├── url_analysis.py             # URL scraping
 │   ├── history_viewer.py           # History dashboard
 │   └── visualizations.py           # LIME & feature importance (ENHANCED!)
 │
 ├── utils/
 │   ├── prediction.py               # Weighted voting (ENHANCED!)
 │   ├── text_preprocessing.py       # Advanced features (ENHANCED!)
-│   ├── model_manager.py            # Model loading
-│   └── web_scraper.py              # URL content extraction
+│   └── model_manager.py            # Model loading
 │
 ├── models/
 │   ├── logistic_regression.pkl

@@ -8,7 +8,6 @@ A beautiful, user-friendly Streamlit web application that uses 4 powerful machin
 
 - **📝 Single Article Analysis** - Analyze individual articles with instant results
 - **📊 Batch Processing** - Upload and analyze multiple articles at once
-- **🔗 URL Analysis** - Extract and analyze articles directly from web URLs
 - **📜 History Tracking** - Save and review past analyses
 - **💾 Export Functionality** - Download results as CSV or JSON
 - **📈 Beautiful Visualizations** - Interactive charts and confidence scores
@@ -79,13 +78,11 @@ Fake News/
 ├── utils/                      # Utility modules
 │   ├── text_preprocessing.py  # Text cleaning functions
 │   ├── model_manager.py       # Model loading and caching
-│   ├── prediction.py          # Prediction logic
-│   └── web_scraper.py         # URL content extraction
+│   └── prediction.py          # Prediction logic
 │
 ├── components/                 # Streamlit UI components
 │   ├── single_analysis.py     # Single article analysis
 │   ├── batch_analysis.py      # Batch processing
-│   ├── url_analysis.py        # URL analysis
 │   ├── history_viewer.py      # History management
 │   └── visualizations.py      # Charts and graphs
 │
@@ -116,15 +113,6 @@ Fake News/
 4. Click **"🔍 Analyze All"**
 5. View results in table format
 6. Download results as CSV or JSON
-
-### URL Analysis
-
-1. Navigate to **"🔗 URL Analysis"**
-2. Paste a news article URL
-3. Click **"📥 Fetch Article"**
-4. Review the extracted text (edit if needed)
-5. Click **"🔍 Analyze"**
-6. View predictions
 
 ### History
 
