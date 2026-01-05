@@ -234,9 +234,8 @@ YOUR APP FEATURES (Remind them!)
 ✨ Feature Importance (global patterns)
 ✨ 8 Advanced Linguistic Features
 ✨ Weighted Voting (optimized predictions)
-✨ Professional 3-tab UI
+✨ Professional UI with multiple analysis modes
 ✨ Batch Analysis
-✨ URL Analysis
 ✨ Analysis History
 
 This is a PRODUCTION-READY, RESEARCH-GRADE system! 🎓

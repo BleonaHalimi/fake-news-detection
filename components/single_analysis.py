@@ -138,6 +138,15 @@ def render(models):
             accuracies = get_model_accuracies()
             result = predict_single(article_text, models, vectorizer, accuracies=accuracies, use_weighted=True)
 
+            # Store result in session state so it persists across reruns
+            st.session_state.last_result = result
+
+    # Check if we have a result to display (either from current analysis or session state)
+    if analyze_button or 'last_result' in st.session_state:
+        # If we just analyzed, result is already set. Otherwise, get it from session state
+        if not analyze_button and 'last_result' in st.session_state:
+            result = st.session_state.last_result
+
         st.markdown("---")
         st.markdown("<br>", unsafe_allow_html=True)
 
@@ -291,6 +300,9 @@ def render(models):
 
         with col3:
             if st.button("Analyze Another Article", use_container_width=True):
+                # Clear the session state result
+                if 'last_result' in st.session_state:
+                    del st.session_state.last_result
                 st.rerun()
 
         st.markdown("---")
